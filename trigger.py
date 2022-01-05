@@ -15,7 +15,7 @@ def requ(df):
 for i in range(1,100000000000000000000000000000000):
   try:
     import multiprocessing
-    import numpy as np
+    # import numpy as np
     pool = multiprocessing.Pool(15)
     df_2 = list(range(126871,253992))
     # pool = multiprocessing.Pool(processes=5)
