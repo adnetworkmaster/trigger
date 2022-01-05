@@ -2,9 +2,9 @@ import requests
 import random
 import time
 s = requests.Session()
-servers = ["https://io-00001.herokuapp.com/crawl.json","https://io-0001.herokuapp.com/crawl.json",
-           "https://io-001.herokuapp.com/crawl.json","https://io-10000.herokuapp.com/crawl.json",
-           "https://io-oioio.herokuapp.com/crawl.json",]
+servers = ["https://po-100.herokuapp.com/crawl.json","https://po-101.herokuapp.com/crawl.json",
+           "https://po-102.herokuapp.com/crawl.json","https://po-103.herokuapp.com/crawl.json",
+           "https://po-104.herokuapp.com/crawl.json",]
 
 def requ(df):
   chossen = random.choice(servers)
