@@ -4,7 +4,7 @@ import urllib
 
 client = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.1vax0.mongodb.net:27017,cluster0-shard-00-01.1vax0.mongodb.net:27017,cluster0-shard-00-02.1vax0.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-umkr09-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = client.anime
-mycol = mydb["gogoapi_3"]
+mycol = mydb["gogoapi_4"]
 mydoc = mycol.find()
 print(mydoc)
 # df = json_normalize(mydoc)
