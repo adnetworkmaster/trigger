@@ -4,7 +4,7 @@ import urllib
 
 client = pymongo.MongoClient("mongodb://ajar:" + urllib.parse.quote_plus("Raja@1802") + "@cluster0-shard-00-00.1vax0.mongodb.net:27017,cluster0-shard-00-01.1vax0.mongodb.net:27017,cluster0-shard-00-02.1vax0.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-umkr09-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = client.nft
-mycol = mydb["northface_urls"]
+mycol = mydb["chanel_urls"]
 mydoc = mycol.find()
 print(mydoc)
 # df = json_normalize(mydoc)
@@ -14,7 +14,7 @@ df = json_normalize(mydoc)
 
 print(df.shape)
 
-df = df.iloc[28000:]
+df = df.iloc[:1500]
 # df
 
 
@@ -32,7 +32,7 @@ servers = ["https://u-001.herokuapp.com/crawl.json","https://u-002.herokuapp.com
 def requ(df):
   chossen = random.choice(servers)
   print(df)
-  response = s.get( chossen + "?spider_name=northface_products&url=" + df)
+  response = s.get( chossen + "?spider_name=chanel_products&url=" + df)
   # print("request completed")
 
 import pandas as pd
