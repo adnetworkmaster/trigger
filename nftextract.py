@@ -14,7 +14,7 @@ df = json_normalize(mydoc)
 
 print(df.shape)
 
-df = df.iloc[4500:6000]
+df = df.iloc[6000:]
 # df
 
 
